@@ -27,12 +27,12 @@
  - Laddningstid före: 38ms
  - Laddningstid efter: 29ms
  - Reflektion: I just denna applikationen så gör det inte så stor skillnad om man zippar ner delar av den eller inte men i större applikationer så kan det göra stor skillnad.
-6. Föflyttning av Css
+6. Förflyttning av Css
  - Teori: Min tanke var att eftersom det är Css-filerna Grid1 och Grid2 som tar längst tid att ladda nu så kanske man bara kan göra som så att man kopierar allt som finns i filerna och lägger det på samma ställe som övriga Css-filer istället.
  - Laddningstid före: 1.2s
  - Laddningstid efter: 100ms
  - Reflektion: Jag hade föredragit att Cachea den Css som hämtas från en extern server men eftersom jag inte kommer åt min Htaccess-fil på mitt webbhotell så kändes detta som en fullgod alternativ lösning (Jag sparade ändå 1.1s)
-7. finputsning av kod
+7. Finputsning av kod
  - Teori: I filen middle.php var det någon som hade skrivit "sleep(2);". Detta känns som en väldigt dum sak om man nu vill att sidan ska ladda snabbare :). Referens: http://php.net/manual/en/function.sleep.php
  - Laddningstid före: 2s
  - Laddningstid efter: 0s
