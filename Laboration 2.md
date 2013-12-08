@@ -27,8 +27,8 @@
  - Laddningstid före: 
  - Laddningstid efter:
  - Reflektion:
-6. Cachening
- - Teori:
+6. Föflyttning av Css
+ - Teori: Min tanke var att eftersom det är Css-filerna Grid1 och Grid2 som tar längst tid att ladda nu så kanske man bara kan göra som så att man kopierar allt som finns i filerna och lägger det på samma ställe som övriga Css-filer istället.
  - Laddningstid före: 
  - Laddningstid efter:
  - Reflektion:
