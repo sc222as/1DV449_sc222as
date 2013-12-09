@@ -37,3 +37,23 @@
  - Laddningstid före: 2s
  - Laddningstid efter: 0s
  - Reflektion: Inte mycket att säga om detta. Sleep fördröjer exekveringen av kod så.. ja.. :)
+ - 
+ 
+##Uppgift 2
+
+1. Säkerhetshål 1
+ - Administratörskontot heter Admin. Detta är inte speciellt smart då en person som försöker hacka ens sida garanterat kommer att förutsätta att Administratörskontot heter något i stil med: Admin, Administrator, Administratör o.s.v.
+ - Om någon får tillgång till Admin-Kontot så kommer personen i princip att få tillgång till hela sidan och kunna göra vad dom vill där.
+ - Skadorna som kan uppkomma är troligtvis väldigt omfattande då en Administratör brukar kunna göra i princip allt. Exempel kan vara att ta bort användare, ändra användaresrättigheter, ta bort inlägg, editera inlägg o.s.v.
+ - Jag har bytt namn på Administratörskontot
+2. Säkerhetshål 2
+ - Användarnamnet och lösenordet för Administratörskontot är ifyllt när man når första-sidan.
+ - Vem som helst som besöker sidan kommer kunna logga in som administratör.
+ - Skadorna som kan uppkomma är troligtvis väldigt omfattande då en Administratör brukar kunna göra i princip allt. Exempel kan vara att ta bort användare, ändra användaresrättigheter, ta bort inlägg, editera inlägg o.s.v.
+ - Jag har sett till så att där inte är något förifyllt när man ska logga in.
+3. Säkerhetshål 3
+ - Lösenordet för Administratörskontot är osäkert. Vill användare ha osäkra lösenord så får dom ha det (deras bekymmer) men administratörskontot SKALL ha ett säkert lösenord (minst 8 teckan, stora och små teckan + specialtecken)
+ - Vem som helst som besöker sidan kommer kunna logga in som administratör.
+ - Skadorna som kan uppkomma är troligtvis väldigt omfattande då en Administratör brukar kunna göra i princip allt. Exempel kan vara att ta bort användare, ändra användaresrättigheter, ta bort inlägg, editera inlägg o.s.v.
+ - Jag har sett till så att där inte är något förifyllt när man ska logga in
+ 
