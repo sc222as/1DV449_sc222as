@@ -37,7 +37,7 @@
  - Laddningstid före: 2s
  - Laddningstid efter: 0s
  - Reflektion: Inte mycket att säga om detta. Sleep fördröjer exekveringen av kod så.. ja.. :)
- - 
+
  
 ##Uppgift 2
 
@@ -47,13 +47,20 @@
  - Skadorna som kan uppkomma är troligtvis väldigt omfattande då en Administratör brukar kunna göra i princip allt. Exempel kan vara att ta bort användare, ändra användaresrättigheter, ta bort inlägg, editera inlägg o.s.v.
  - Jag har bytt namn på Administratörskontot
 2. Säkerhetshål 2
+ - Lösenordet för Administratörskontot är osäkert. Vill användare ha osäkra lösenord så får dom ha det (deras bekymmer) men administratörskontot SKALL ha ett säkert lösenord (minst 8 teckan, stora och små teckan + specialtecken)
+ - Vem som helst som besöker sidan kommer kunna logga in som administratör.
+ - Skadorna som kan uppkomma är troligtvis väldigt omfattande då en Administratör brukar kunna göra i princip allt. Exempel kan vara att ta bort användare, ändra användaresrättigheter, ta bort inlägg, editera inlägg o.s.v.
+ - Jag har bytt lösenord på Administratörskontot
+3. Säkerhetshål 3
  - Användarnamnet och lösenordet för Administratörskontot är ifyllt när man når första-sidan.
  - Vem som helst som besöker sidan kommer kunna logga in som administratör.
  - Skadorna som kan uppkomma är troligtvis väldigt omfattande då en Administratör brukar kunna göra i princip allt. Exempel kan vara att ta bort användare, ändra användaresrättigheter, ta bort inlägg, editera inlägg o.s.v.
  - Jag har sett till så att där inte är något förifyllt när man ska logga in.
-3. Säkerhetshål 3
- - Lösenordet för Administratörskontot är osäkert. Vill användare ha osäkra lösenord så får dom ha det (deras bekymmer) men administratörskontot SKALL ha ett säkert lösenord (minst 8 teckan, stora och små teckan + specialtecken)
- - Vem som helst som besöker sidan kommer kunna logga in som administratör.
- - Skadorna som kan uppkomma är troligtvis väldigt omfattande då en Administratör brukar kunna göra i princip allt. Exempel kan vara att ta bort användare, ändra användaresrättigheter, ta bort inlägg, editera inlägg o.s.v.
- - Jag har sett till så att där inte är något förifyllt när man ska logga in
+4. Säkerhetshål 4
+ - Lösenorden sparas i klartext i databasen
+ - Om databasen komprimeras så kommer hackaren att ha tillgång till alla användarnamn samt ohashade lösenord
+ - Då majoriteten av användare på internet använder samma lösenord på flera ställen så är de inte bara våran sajt som har komprimerats utan flera andra sajter också. Ännu roligare blir det om vi tvingar användare att fylla i sin E-Post adress för då är dom helt rökta
+ - Jag har sett till så att alla lösenord blir hashade
+
+
  
