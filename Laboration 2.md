@@ -2,6 +2,12 @@
 
 ##Uppgift 1
 
+Förklaring på punkterna:
+Teori: Identifierat fel och vad som ska göras och vad som borde hända
+Laddningstid före:
+Laddningstid efter:
+Reflektion:
+
 1. Komprimering JPEG-Bild
  - Teori: Bilden food.jpg är i formatet 2048x1536 och har en storlek på 1,96MB. Den visas bara i 293x220px. Om jag skalar ner bilden till samma storlek som den visas borde filen bli mindre och därför ladda snabbare. Referens: http://discover-devtools.codeschool.com/levels/5/challenges/12?locale=en 
  - Laddningstid före: 1.24s
