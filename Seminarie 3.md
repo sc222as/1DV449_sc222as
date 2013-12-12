@@ -13,7 +13,9 @@
  
 ## Del 2 - Fallstudie - Exempel på en bra befintlig mashup-applikation
 
+- Jag valde http://trendsmap.com/
+
 1. Varför är denna applikation ett bra exempel på mashup-applikation?
- - 
+ - Jag tycker att det är en smart rolig applikation. Som många andra Mashups så tror jag att skaparen tänkte såhär: "Okej, jag har en karta. Vad vill jag se på denna kartan?" Det känns som en väldigt typisk Mashup och vill man förklara för någon vad en Mashup är så är detta ett bra exempel.
 2. På vilket sätt kombineras datakällorna och vilken ny effekt får dessa tillsammans?
- - 
+ - Du har "Twitter Trending Topics" och "Google Maps". Ensamma så visar den ena Twitter och den andra en karta. Tillsammans kan visa de mest tweetade ämnena i en specifik region på en världskarta.  
