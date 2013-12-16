@@ -42,7 +42,7 @@ Reflektion:
  - Teori: I filen middle.php var det någon som hade skrivit "sleep(2);". Detta känns som en väldigt dum sak om man nu vill att sidan ska ladda snabbare :). Referens: http://php.net/manual/en/function.sleep.php
  - Laddningstid före: 2s
  - Laddningstid efter: 0s
- - Reflektion: Inte mycket att säga om detta. Sleep fördröjer exekveringen av kod så.. ja.. :)
+ - Reflektion: Inte mycket att säga om detta. Sleep fördröjer exekveringen av kod så.. ja.. :) (Faktum är att när jag jobbade med Uppgift 2 i laborationen så irriterade det mig bara att middle.php existerade så jag bortsåg från den helt istället. Ett mindre anrop är väl alltid en positiv sak antar jag.)
 
  
 ##Uppgift 2
@@ -66,7 +66,7 @@ Reflektion:
  - Lösenorden sparas i klartext i databasen
  - Om databasen komprimeras så kommer hackaren att ha tillgång till alla användarnamn samt ohashade lösenord
  - Då majoriteten av användare på internet använder samma lösenord på flera ställen så är de inte bara våran sajt som har komprimerats utan flera andra sajter också. Ännu roligare blir det om vi tvingar användare att fylla i sin E-Post adress för då är dom helt rökta
- - Jag har sett till så att alla lösenord blir hashade
+ - Jag har sett till så att alla lösenord blir hashade. Jag vill gärna kommentera och skriva att hashningen inte går till så som jag skulle önska men då mitt webbhotell inte stödjer php 5.5.0 så kan jag inte använde mig av password_hash funktionen. Vad jag gör nu istället är att jag hashar användarnamnet, lösenordet och sen de två tillsammans. Tillåter man inte att flera personer har samma användarnamn så kommer man aldrig få en likadan hash på två olika konton om jag har tänkt rätt. Inte optimalt med som Leitet sade: "Bättre än 90%" :).
 
 
  
