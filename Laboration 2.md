@@ -77,7 +77,7 @@ Jag funderade på att lägga till tidsangivelser som det står i labbrapporten m
 
 ## Reflektion
 
- - Detta var en väldigt underhållande och intressant lab på många vis. Jag personligen älskar laborationer som handlar om säkerthet (Dock så var säkerhetsföreläsningen nästan exakt densamma som jag hade i Nätverkssäkerhet för ca: 1 år sedan :)).
+Detta var en väldigt underhållande och intressant lab på många vis. Jag personligen älskar laborationer som handlar om säkerthet (Dock så var säkerhetsföreläsningen nästan exakt densamma som jag hade i Nätverkssäkerhet för ca: 1 år sedan :)).
  
 Optimering var också väldigt roligt då man verkligen märkte av skillnaden i det man gjorde. Man vill alltid kunna visa upp vad man har gjort för vänner och familj men i de flesta fallen brukar de sitta som fågelholkar när man visar. Denna gången kunde man visa klart och tydligt hur sidan laddade före och efter man hade optimerat den och det var tydliga resultat.
 
