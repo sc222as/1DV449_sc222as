@@ -27,7 +27,7 @@ Reflektion:
  - Teori: För att hemsidan skall laddas snabbare så behövs Css-filerna laddas så snabbt som möjligt (Framför allt snabbare än Javascriptet) Jag flyttar därför upp Css-anropen över Javascript-anropet samt gör Javascript-anropet Asynkront (Skjuter upp analyseringen av JavaScriptet). Referens: http://discover-devtools.codeschool.com/levels/5/challenges/8?locale=en 
  - Laddningstid före: 39ms
  - Laddningstid efter: 39ms
- - Reflektion: Jag märkte ingen direkt skillnad här ska jag erkänna. I Teorin så ska Css-filerna laddas först eftersom en användare inte kan börja använda sidan (Nyttja Javascript) förräns sidan är fullt renderad ändå.
+ - Reflektion: Jag märkte ingen direkt skillnad här ska jag erkänna. I Teorin så ska Css-filerna laddas först eftersom en användare inte kan börja använda sidan (Nyttja Javascript) förräns sidan är fullt renderad ändå. (Jag var tvungen att göra så att javascript-anropet inte blev asynkront i slutändan ändå då det strulade till det med Ajax-anropet =/)
 5. Nedzippning
  - Teori: Jag lade till koden "ob_start("ob_gzhandler");" i början på applikationen. Vad den gör är att den komprimerar textfilen som sedan expanderas av webbläsaren. Referens: http://orion.lnu.se/pub/education/course/1DV449/ht13/video/HTTP_02.mp4
  - Laddningstid före: 38ms
@@ -67,6 +67,23 @@ Reflektion:
  - Om databasen komprimeras så kommer hackaren att ha tillgång till alla användarnamn samt ohashade lösenord
  - Då majoriteten av användare på internet använder samma lösenord på flera ställen så är de inte bara våran sajt som har komprimerats utan flera andra sajter också. Ännu roligare blir det om vi tvingar användare att fylla i sin E-Post adress för då är dom helt rökta
  - Jag har sett till så att alla lösenord blir hashade. Jag vill gärna kommentera och skriva att hashningen inte går till så som jag skulle önska men då mitt webbhotell inte stödjer php 5.5.0 så kan jag inte använde mig av password_hash funktionen. Vad jag gör nu istället är att jag hashar användarnamnet, lösenordet och sen de två tillsammans. Tillåter man inte att flera personer har samma användarnamn så kommer man aldrig få en likadan hash på två olika konton om jag har tänkt rätt. Inte optimalt med som Leitet sade: "Bättre än 90%" :).
+
+## Uppgift 3
+
+ - Efter att ha suttit med detta några timmar så upptäcker jag till min (fasa(?), lättnad(?)) att där finns ju redan en Ajax-Funktion "färdig" i systemet. Så det var ut med allt arbete jag hade gjort och börja om på nytt :). Efter lite googlande så hittade jag en som löste att meddelandet kommer först i listan, jag bytte helt enkelt ut append mot prepend och så var det fixat :). om man googlar på append så ser man t.om. under tips att det står:
+"The prepend() method inserts specified content at the beginning of the selected elements.
+Tip: To insert content at the end of the selected elements, use the append() method."
+Jag funderade på att lägga till tidsangivelser som det står i labbrapporten men då tiden är knappt så tolkar jag det bokstavligt att man gärna får göra det, d.v.s. det är inget krav :). Om jag har fel så påpeka gärna detta så ska jag fixa till det :). 
+
+## Reflektion
+
+ - Detta var en väldigt underhållande och intressant lab på många vis. Jag personligen älskar laborationer som handlar om säkerthet (Dock så var säkerhetsföreläsningen nästan exakt densamma som jag hade i Nätverkssäkerhet för ca: 1 år sedan :)).
+ 
+Optimering var också väldigt roligt då man verkligen märkte av skillnaden i det man gjorde. Man vill alltid kunna visa upp vad man har gjort för vänner och familj men i de flesta fallen brukar de sitta som fågelholkar när man visar. Denna gången kunde man visa klart och tydligt hur sidan laddade före och efter man hade optimerat den och det var tydliga resultat.
+
+Ajax anropet var ingen direkt favorit hos mig men det är bra att den var med för den slår mot min personliga akilleshäl, att sätta sig in i andras kod (huu!). 
+
+För en körbar version så gå till http://wpprojekt.se/webbteknikII/1DV449_L02/
 
 
  
