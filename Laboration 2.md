@@ -84,6 +84,7 @@ Optimering var också väldigt roligt då man verkligen märkte av skillnaden i 
 Ajax anropet var ingen direkt favorit hos mig men det är bra att den var med för den slår mot min personliga akilleshäl, att sätta sig in i andras kod (huu!). 
 
 För en körbar version så gå till http://wpprojekt.se/webbteknikII/1DV449_L02/
+Logga in som user med lösenordet user. Om du vill ha tillgång till föredetta administratörskontot så får du kontakta mig :)
 
 
  
