@@ -1,0 +1,23 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h4 {
+  margin-top: 25px;
+}
+.row {
+  margin-bottom: 20px;
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.right {
+	text-align: right;
+}
+
+.nobg {
+	background: 0;
+}
