@@ -13,7 +13,7 @@ while($row = $query->fetchObject())
 {
 
     
-    echo "Namn = ".$row->namn ." <br /> ". "Producent ID = ".$row->id ." <br /> ". "Hemsida = ".$row->hemsida ." <br /> ". $row->stad ." <br /> "."===========================================" ." <br /> ";
+    echo "Namn: ".$row->namn ." <br /> ". "Producent ID: ".$row->id ." <br /> ". "Hemsida: ".$row->hemsida ." <br /> ". "Ort: ".$row->stad ." <br /> "."===========================================" ." <br /> ";
 }
 
 
