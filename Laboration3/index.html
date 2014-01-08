@@ -13,8 +13,9 @@
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEDSPSF1m55uM28QXI__vqg6Xi_6zb2lc&sensor=true">
     </script>
-     <!-- <script type="text/javascript" src="js/lab3.js"> </script>-->
+     <script type="text/javascript" src="js/lab3.js"> </script>
      <script type="text/javascript" src="js/jquery.js"> </script>
+     
 
 </head>
  <body>
@@ -32,18 +33,42 @@
      });
 
      function getMarkers() {
-         alert("so far so good"); //hit fungerar det
-         $.get("http://api.sr.se/api/v2/traffic/messages?&pagination=false", function (data) {      // Det går att följa länken till ett xml-document så det är inte fel där.
-                  $(data).find("message").each(function () {                                        //den gör anropet till sidan men i network-tabben i chrome står det cancelled.
 
-                      $("body").append($(this).find('longitude'));
-                  });
-     });
+         $.ajax({
+             url: 'http://api.sr.se/api/v2/traffic/messages?format=json&pagination=false&indent=true&size=100',
+             dataType: 'jsonp',
+             success: function (data) {
+                 alert("so far so good1")                                  
+                 var text = '';
+                 var messages = data.messages;
+                 var len = messages.length;
+                 for (var i = 0; i < len; i++) {
 
-     };
+                     text += '<p>' + messages[i].title + '<br/ >' + messages[i].latitude + '<br/ >' + messages[i].longitude + '</p>'
+                     
+                 }
+                 $('body').html(text);
+
+             }
+
+         });
+
+     };        
+         
+         
+         
+//         
+//         alert("so far so good"); //hit fungerar det
+//         $.get("http://api.sr.se/api/v2/traffic/messages?&pagination=false", { history: 10 }, jsonp, function (data) {
+//             alert(data);      // det går att följa länken till ett xml-document så det är inte fel där.
+//             $(data).find("message").each(function () {                                        //den gör anropet till sidan men i network-tabben i chrome står det cancelled.
+
+//                 $("body").append($(this).find("longitude").text());
+//             });
+</script>
            
 
-</script>
+
 
 
 
