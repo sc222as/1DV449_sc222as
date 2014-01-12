@@ -19,7 +19,14 @@
 
 </head>
  <body>
- <input type ="button" value ="Visa som Text" id="test" />
+ 
+  <input type ="button" value ="Vägtrafik" onclick="foo(0)" />
+  <input type ="button" value ="Kollektivtrafik" onclick="foo(1)" />
+  <input type ="button" value ="Planerad störning" onclick="foo(2)" />
+  <input type ="button" value ="Övrig" onclick="foo(3)" />
+  <input type ="button" value ="Samtliga" onclick="foo(null)" />
+  <input type ="button" value ="Visa som Text" onclick="getMarkersAsText()" />
+  <input type="button" value="Återställ allt" onclick="window.location.reload()" />
 
  <div id="map-canvas" style="width: 100%; height: 100%"></div>
  </body>
@@ -28,35 +35,8 @@
 
  
  <script type="text/javascript">
-     $(function () {
-         $("#test").click(getMarkersAsText);
-     });
-//     $(function () {
-//         $("#Button1").click(foo);
-//     });
 
-     function getMarkersAsText() {
 
-         $.ajax({
-             url: 'http://api.sr.se/api/v2/traffic/messages?format=json&pagination=false&indent=true&size=100',
-             dataType: 'jsonp',
-             success: function (data) {
-
-                 var text = '';
-                 var messages = data.messages;
-                 var len = messages.length;
-                 for (var i = 0; i < len; i++) {
-                     var date = new Date(parseInt(messages[i].createddate.substr(6)));
-                     text += '<p>' + messages[i].title + '<br/ >' + messages[i].latitude + '<br/ >' + messages[i].longitude + '<br/ >' + date + '</p>'
-
-                 }
-                 $('body').html(text);
-
-             }
-
-         });
-
-     }; 
 </script>
            
 

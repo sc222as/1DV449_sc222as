@@ -1,7 +1,7 @@
 <?php 
 
-header(""); 
-$url = "http://api.sr.se/api/v2/traffic/messages?format=json&pagination=false&indent=true&size=100";
+header('Access-Control-Allow-Origin: *');
+$url = "http://api.sr.se/api/v2/traffic/messages?format=json&pagination=false&indent=true";
 
 $data = file_get_contents($url);
 
