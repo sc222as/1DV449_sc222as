@@ -19,13 +19,16 @@ Jag har använt mig av Googles kart-API. På klientsidan är allt kodat i Javasc
 ##Egenreflektion kring projektet
 
 Projektet har på det stora hela gått bra känner jag. Jag har lärt mig otroligt mycket på väldigt kort tid med detta projektet. Jag har bl.a lärt mig att skrapa aspx-hemsidor (Fruktansvärt), hur besviken man blir på många API:er, hur man skapar JSON-Formaterad data, flera sätt att använda sig av googles map-API.
- - Problem
+ - Problem:
+
 Ja var ska man börja. Det första stora problemet jag stötte på var att jag hade ingen aning om hur man skulle skrapa en aspx-hemsida. Efter mycket MYCKET googlande så lyckades jag dock till slut tack och lov. Mitt nästa problem var att googles geolocation inte ville fungera. Från början gjorde jag som så att jag använde den på klientsidan nämligen men då kunde den bara sätta ut tio adresser sen ansåg den att det var för många anrop för snabbt. Lösningen på detta var att köra på serversidan, hämta Long/Latitud och därefter placera ut markers med hjälp av det istället. Nästa roliga problem var att vissa av markersen hamnade i Göteborg och Stockholm o.s.v. Oturligt nog för mig så fanns Sofierogatan på fler ställen än i Munka Ljungby. Lösning på detta var att man satte en bounds med google geocoder. Förutom detta har det varit lite småbuggar här och var. En bugg som jag tyvärr inte kan lösa är att Google-Maps API inte har kartlagt Sverige speciellt nogrannt. Detta skapar problem då den tycker att Sofierogatan 15, 17 och 19 ligger på samma long/latitud. När jag då placerar ut en marker så placerar den ju då såklart över föregående marker. Min "lösning" på detta är att jag kommer att försöka använda mig av Eniros API istället i framtiden.
 
- - Funktioner jag hade viljat implementera
+ - Funktioner jag hade viljat implementera:
+
 Om man läser i min Projektbeskrivning och Seminarie 3 så ser man att det finns en hel drös med funktioner som jag vill implementera. Anledningen till att dessa inte är implementerade är inte att det inte funnits tid utan att de API:er som jag trodde skulle göra vissa saker verkligen inte gör det. T.ex. mitt API för att kontrollera elpriser. Kontrollerade det Elpriser? Nej. Vad det gjorde var att man skrev in sin adress och därefter skrev den ut vilket elområde man bor i. Det finns fyra elområden i Sverige. Ett är norrland, det andra är typ norrland, det tredje är mellansverige och det fjärde är södra sverige. Sådär spännande att det står på varje lägenhet att den (och alla andra lägenheter inom 40 mils-radie) befinner sig i område 4. Det finns fler funktioner som jag vill implementera i mitt projekt men jag tror att jag kommer göra det med hjälp av webbskrapor istället för API:er (Om jag inte hittar något väldigt intressant).
 
- - Vidare arbete
+ - Vidare arbete:
+
 Jag kommer att göra om min applikation till att använda sig av Eniros API istället för google. Jag kommer att tala med de på Ängelholmshem och fråga vad dom vill se i applikationen (Har redan fått tips om att de vill se hur stadsbussen går). 
 
 ##Risker
