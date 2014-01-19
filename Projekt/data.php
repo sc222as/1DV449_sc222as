@@ -8,26 +8,26 @@ $data = array();
 
 while($row = $query->fetchObject())
 {
-    
-   // $data = array(
-   //     array(
-   //    'long' => "$row->long",
-   //    'lat' => "$row->lat",
-   //    'adresser' => "$row->adresser"
-   //),
-       
-       
-   //);
+
           $row_array['adresser'] = "$row->adresser";
           $row_array['long'] = "$row->long";
           $row_array['lat'] = "$row->lat"; 
     array_push($data,$row_array);
 }
-echo  json_encode($data);
-       //$data[] = $row->long;
-       //$data[] = $row->lat;
-       //$data[] = $row->adresser;
-       
+//$db = new PDO("sqlite:db2.db");
+//$query = $db->prepare("SELECT * FROM elpris");
+//$query->execute();
+//while($row = $query->fetchObject())                                               //Nog ingen bra lösning
+//{
+//    $row_array['leverantor'] = "$row->leverantor";
+//    $row_array['pris'] = "$row->pris";
+    
+//    array_push($data,$row_array);
+//}
 
-       //$row_array['adresser'] = $row['adresser'];
+
+
+
+echo  json_encode($data);
+
 ?>
