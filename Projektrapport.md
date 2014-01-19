@@ -42,3 +42,8 @@ Jag kommer att göra om min applikation till att använda sig av Eniros API ist�
 
 Tror inte att jag gör något speciellt här. Det enda jag kände var på en helt annan nivå än en trea var att skrapa Ängelholmshem hemsida.
 
+##Resurser
+
+ - Presentation: http://www.youtube.com/watch?v=s1vm2BF9vXA&feature=youtu.be
+ - Länk till körbar applikation: http://wpprojekt.se/webbteknikII/Projekt/index.html
+
