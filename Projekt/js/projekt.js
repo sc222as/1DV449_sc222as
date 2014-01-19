@@ -75,7 +75,7 @@ function initialize() {
                         error: function () { alert("Ett fel har inträffat, var vänlig försök igen lite senare."); },
                         success: function (data) {
                             var len = data.length;
-                            infowindow.setContent('<p>' + 'Elleverantör: ' + data[0].leverantor + ' - Pris:' + data[0].pris + ' Öre/KwH </br> ' + 'Elleverantör: ' + data[1].leverantor + ' - Pris:' + data[1].pris + ' Öre/KwH </br> ' + 'Elleverantör: ' + data[2].leverantor + ' - Pris:' + data[2].pris + ' Öre/KwH'+'</p>');
+                            infowindow.setContent('<p>' + 'Elleverantör: ' + data[0].leverantor + ' - Pris:' + data[0].pris + ' Öre/KwH </br> ' + 'Elleverantör: ' + data[1].leverantor + ' - Pris:' + data[1].pris + ' Öre/KwH </br> ' + 'Elleverantör: ' + data[2].leverantor + ' - Pris:' + data[2].pris + ' Öre/KwH'+'</br> Samtlig data hämtad från www.elpriser.se'+'</p>');
                             infowindow.open(map, marker);
 
                         }
