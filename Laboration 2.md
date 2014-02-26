@@ -1,4 +1,4 @@
-#Laboration 2
+﻿#Laboration 2
 
 ##Uppgift 1
 
@@ -67,6 +67,13 @@ Reflektion:
  - Om databasen komprimeras så kommer hackaren att ha tillgång till alla användarnamn samt ohashade lösenord
  - Då majoriteten av användare på internet använder samma lösenord på flera ställen så är de inte bara våran sajt som har komprimerats utan flera andra sajter också. Ännu roligare blir det om vi tvingar användare att fylla i sin E-Post adress för då är dom helt rökta
  - Jag har sett till så att alla lösenord blir hashade. Jag vill gärna kommentera och skriva att hashningen inte går till så som jag skulle önska men då mitt webbhotell inte stödjer php 5.5.0 så kan jag inte använde mig av password_hash funktionen. Vad jag gör nu istället är att jag hashar användarnamnet, lösenordet och sen de två tillsammans. Tillåter man inte att flera personer har samma användarnamn så kommer man aldrig få en likadan hash på två olika konton om jag har tänkt rätt. Inte optimalt med som Leitet sade: "Bättre än 90%" :).
+5. Säkerhetshål 5
+ - Applikationen är sårbar för SQL-Injections
+ - Med hjälp av SQL-Injections kan en hackare bl.a tömma hela ens databas, hämta lösenord o.s.v.
+ - Data och lösenord och dylikt kan gå förlorade och kunderna kommer att tappa förtroende för ens sida
+ - Jag försökte se till att skydda mig med hjälp av mysql_real_escape_string (http://se1.php.net/mysql_real_escape_string)(add.php line 18-23). Vad den gör är att den tar bort specialtecken som används vid en SQL-Injection. Vad som hände när jag försökte använda den dock var att jag fick ett felmeddelande "Warning: mysql_real_escape_string(): Access denied for user". Efter mycked googlande tror jag att svaret var att jag försökte använda mig av mysql när jag bara körde PDO. Istället så fixade jag lite med en funktion som heter bindParam (http://www.php.net/manual/en/pdostatement.bindparam.php) och det verkar fungera utmärkt (Enligt vissa är detta att föredra (http://stackoverflow.com/questions/60174/how-can-i-prevent-sql-injection-in-php)).
+
+
 
 ## Uppgift 3
 

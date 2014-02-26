@@ -13,10 +13,17 @@ function addToDB($name, $message, $pid) {
 	catch(PDOEception $e) {
 		die("Something went wrong -> " .$e->getMessage());
 	}
-	$q = "INSERT INTO messages (message, name, pid) VALUES('$message', '$name', '$pid')";
-	
+    //$safe_messages = mysql_real_escape_string($messages);
+    //$safe_name = mysql_real_escape_string($name);                             Fungerar inte =/
+    //$safe_pid = mysql_real_escape_string($pid);
+    
+	$q = "INSERT INTO messages (message, name, pid) VALUES(?,?,?)";                                     // Kompletering
 	try {
-		if(!$db->query($q)) {
+		$sth = $db->prepare($q);
+		$sth->bindParam(1, $message, PDO::PARAM_STR);
+		$sth->bindParam(2, $name, PDO::PARAM_STR);
+		$sth->bindParam(3, $pid, PDO::PARAM_INT);
+		if (!$sth->execute()) {
 			die("Fel vid insert");
 		}
 	}
