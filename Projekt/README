@@ -10,11 +10,7 @@ När man har klickat på Submit-knappen skickar applikationen dig vidare till en
 har valt att skicka in.
 Varje markör har även en tidsstämpel så att man tydligt kan se när markören placerades ut.
 
-Angående den schematiska bilden. Då jag inte vet hur man implementerar bilder i 
 För en schematisk bild över applikationsflödet se nedan:
-
-Inline-style: 
-![alt text](http://wpprojekt.se/schematics.png "Schematics")
 
 ![alt tag](http://wpprojekt.se/schematics.png)
 
