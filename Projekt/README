@@ -11,11 +11,8 @@ har valt att skicka in.
 Varje markör har även en tidsstämpel så att man tydligt kan se när markören placerades ut.
 
 För en schematisk bild över applikationsflödet se nedan:
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
-![alt tag](http://wpprojekt.se/schematics.png)
-
+http://wpprojekt.se/schematics.png
 
 Vad gällande Säkerhet och Prestandaoptimering så har jag implementerat skydd mot SQL-injections i SQLite databasen.
 Där finns ingen direkt känslig data i databasen så att kryptera innehållet känndes överflödigt.
