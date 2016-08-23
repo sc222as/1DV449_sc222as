@@ -1,6 +1,7 @@
-Tänkte använda mig av appjobb.se's API (http://apikatalogen.se/api/appjobb-api)
-samt Booli.se's API (https://www.booli.se/api/).
+Jag har använt mig av Geolocation samt Google Maps API och gjort en mashup där man
+kan skriva in sitt namn och få se sig själv samt andra som skrivit in sitt namn på en
+interaktiv karta.
 
-Tanken är att man ska kunna leta jobb och bostad på samma sida. Det skall komma upp
-en lista på lediga jobb och när man klickar på något utav dom så kommer även
-samtliga (Eller ett begränsat antal) bostäder att visas på den orten.
+Tanken med denna applikationen är att lastbilschaufförer som kör från en plats till
+en annat skall kunna checka in på vägarna, dels för att kunna samköra och dels för att
+de som sitter på platserna skall kunna se vad chaufförerna befinner sig. 
