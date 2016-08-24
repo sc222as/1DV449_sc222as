@@ -53,4 +53,5 @@ Jag anser inget vara betygshöjande i denna applikationen. Det är en "bare mini
 Hade jag haft mer tid så kanske man hade kunnat hitta på mer roliga saker men det är som det är. 
 
 Länk till presentationen: https://youtu.be/GJVf-PYG33I
+
 Länk till applikationen: https://wpprojekt.se/WhereAreYou/Index.html
