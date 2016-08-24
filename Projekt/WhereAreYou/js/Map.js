@@ -9,26 +9,19 @@ function initialize() {
     
     var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
-
+                                                                                                                //Här används Ajax för att hämta Json datan
     $.ajax({
 
         dataType: 'json',
         url: "DataRetrieve.php",
-        error: function () { alert("Ett fel har inträffat, var vänlig försök igen lite senare"); },
+        error: function () { alert("Ett fel har inträffat, var vänlig försök igen lite senare"); },             //Felhantering
         success: function (data) {
             var text = '';
             var marker;
-            var markers = new Array();
+            var markers = new Array();                                                                          //Förbereder här placerar vi alla markörer i en array
             var len = data.length;
 
-            var infowindow2 = new google.maps.InfoWindow({
-        });
-        var infowindow = new google.maps.InfoWindow({
-            maxWidth: 360
-        });
-
-
-        for (var i = 0; i < len; i++) {
+        for (var i = 0; i < len; i++) {                                                                         //Här placerar vi ut alla markörer som fanns i arrayen. 
             var title = data[i].Name + " Time: " + data[i].Time;
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(data[i].Lat, data[i].Long),

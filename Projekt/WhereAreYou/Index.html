@@ -13,31 +13,35 @@
         
     function initGeolocation() {
  if (navigator && navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-        } else {
-            console.log('Geolocation is not supported');
+            navigator.geolocation.getCurrentPosition(successCallback, errorCallback);               // Initierar Geolocation och om det skulle vara som så att det inte fungerar 
+        } else {                                                                                    //så presenteras ett felmeddelande
+            alert('Geolocation is not supported');
         }
 }
 
 function errorCallback() {}
 
 function successCallback(position) {
-    var long = position.coords.longitude;
+    var long = position.coords.longitude;                                                           //Variabler för Long och Lat
     var lat = position.coords.latitude;
 
-    document.getElementById('long').value = position.coords.longitude;
+    document.getElementById('long').value = position.coords.longitude;                              //Lösningen för att skicka med Long och Lat med formuläret
     document.getElementById('lat').value = position.coords.latitude;
     }
     </script>
 </head>
+<h1>Where Are You</h1>
+
+<p>Hello and welcome to the Where Are You app! <br /> To get started just type in your name or a message and press the Submit button below</p>
 
 
+                                                                                                    <!--Formuläret för att skicka data till DataInsert.php-->
 <body onload="javascript:initGeolocation()">
     <form id="myForm" action="DataInsert.php" method="post">
-        Name: <input type="text" name="name" /><br />
+        Message: <input type="text" name="name" /><br />
         <input type="hidden" name="long" id ="long"/> 
         <input type="hidden" name="lat" id ="lat"/> 
-        <button id ="submit">Save</button>    
+        <button id ="submit">Submit</button>    
     </form>
 </body>
 </html>

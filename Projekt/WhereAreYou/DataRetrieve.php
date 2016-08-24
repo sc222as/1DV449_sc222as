@@ -7,8 +7,8 @@
         die("Something went wrong -> " .$e->getMessage());
     }
 
-$query = $db->prepare("SELECT * FROM Data");
-$query->execute();
+$query = $db->prepare("SELECT * FROM Data");                                        //I denna klassen så hämtar vi samtlig data och sparar den i en Array som vi därefter
+$query->execute();                                                                  //skickar vidare i JSON-Format
 $data = array();
 while($row = $query->fetchObject())
 {
